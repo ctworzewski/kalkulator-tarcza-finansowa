@@ -1,0 +1,13 @@
+div {
+    display: inline-block;
+}
+
+button {
+    display: block;
+}
+
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
