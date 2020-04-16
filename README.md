@@ -20,9 +20,9 @@ programowania: HTML, CSS oraz JavaScript.
 * [x] przetestowanie działania funkcji w `console.log();`
 * [x] wyrenderowanie wyników w `<span>` metodą `textContent`
 * [x] dodanie warunku o `maxKwotaSubwencji`
-* [] ostylowanie w CSS
+* [ ] ostylowanie w CSS
 
 ### Dodatkowe funkcjonalności
 
-* [] dodanie zdarzenia `keyCode` na klawisz `Enter`
-* [] dodanie funckonalności podobnej do slidera - po każdym wprowadzeniu klikam `Dalej`; każdy `input` jako osobny blok `div` - chyba zrobić tablicę obiektów, gdzie każdy ten `div` będzie osobnym obiektem
+* [ ] dodanie zdarzenia `keyCode` na klawisz `Enter`
+* [ ] dodanie funckonalności podobnej do slidera - po każdym wprowadzeniu klikam `Dalej`; każdy `input` jako osobny blok `div` - chyba zrobić tablicę obiektów, gdzie każdy ten `div` będzie osobnym obiektem
