@@ -1,4 +1,4 @@
-# kalkulator tarczy antykryzysowwej dla biur rachunkowych
+# kalkulator tarczy finansowej dla biur rachunkowych w czasach COVID-19
 
 ## Demo
 
