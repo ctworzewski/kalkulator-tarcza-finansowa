@@ -1,12 +1,10 @@
 let button = document.querySelector('.button');
-
 button.addEventListener('click', function () {
     let prevYear = document.querySelector('.revenuesFirst').value;
     let prevMonth = document.querySelector('.revenuesPrev').value;
     let currentMonth = document.querySelector('.revenuesCurrently').value;
     console.log('Przycisk działa');
     console.log(prevMonth);
-
 
     let spadekProc = spadekProcentowy(prevMonth, currentMonth);
     let procentSubwencji = procentSubwencja(spadekProc);
@@ -16,6 +14,11 @@ button.addEventListener('click', function () {
     console.log(procentSubwencji)
     console.log(kwotaSub)
 
+    let spadekPrzychodu = document.querySelector('.wartoscSpadekPrzychodu');
+    spadekPrzychodu.textContent = spadekProc * 100;
+
+    let kwotaS = document.querySelector('.kwotaSubwencji');
+    kwotaS.textContent = kwotaSub;
 })
 
 function spadekProcentowy(prev, current) {
