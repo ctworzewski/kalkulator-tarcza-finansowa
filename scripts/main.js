@@ -40,5 +40,10 @@ function procentSubwencja(spadek) {
 
 function kwotaSubwencji(year, procent) {
     let kwotaSubwencji = year * procent;
+    let maxKwotaSubwencji = 3500000;
+
+    if (kwotaSubwencji > maxKwotaSubwencji) {
+        return maxKwotaSubwencji;
+    }
     return kwotaSubwencji;
 }
