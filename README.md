@@ -24,5 +24,6 @@ programowania: HTML, CSS oraz JavaScript.
 
 ### Dodatkowe funkcjonalności
 
+* [ ] w celach treningowych zamiast `if else` użyć  instrukcji warunkowej `switch`
 * [ ] dodanie zdarzenia `keyCode` na klawisz `Enter`
 * [ ] dodanie funckonalności podobnej do slidera - po każdym wprowadzeniu klikam `Dalej`; każdy `input` jako osobny blok `div` - chyba zrobić tablicę obiektów, gdzie każdy ten `div` będzie osobnym obiektem

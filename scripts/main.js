@@ -1,14 +1,14 @@
 let button = document.querySelector('.button');
 button.addEventListener('click', function () {
-    let prevYear = document.querySelector('.revenuesFirst').value;
-    let prevMonth = document.querySelector('.revenuesPrev').value;
-    let currentMonth = document.querySelector('.revenuesCurrently').value;
+    let poprzedniRok = document.querySelector('.przychodPoprzedniRok').value;
+    let poprzedniMiesiac = document.querySelector('.przychodPoprzedniMiesiac').value;
+    let obecnyMiesiac = document.querySelector('.przychodObecnyMiesiac').value;
     console.log('Przycisk działa');
-    console.log(prevMonth);
+    console.log(poprzedniMiesiac);
 
-    let spadekProc = spadekProcentowy(prevMonth, currentMonth);
+    let spadekProc = spadekProcentowy(poprzedniMiesiac, obecnyMiesiac);
     let procentSubwencji = procentSubwencja(spadekProc);
-    let kwotaSub = kwotaSubwencji(prevYear, procentSubwencji);
+    let kwotaSub = kwotaSubwencji(poprzedniRok, procentSubwencji);
 
     console.log(spadekProc)
     console.log(procentSubwencji)
@@ -21,8 +21,8 @@ button.addEventListener('click', function () {
     kwotaS.textContent = kwotaSub;
 })
 
-function spadekProcentowy(prev, current) {
-    let spadekProcentowy = (prev - current) / prev;
+function spadekProcentowy(poprzedni, obecny) {
+    let spadekProcentowy = (poprzedni - obecny) / poprzedni;
     return spadekProcentowy;
 }
 
@@ -38,8 +38,8 @@ function procentSubwencja(spadek) {
     }
 }
 
-function kwotaSubwencji(year, procent) {
-    let kwotaSubwencji = year * procent;
+function kwotaSubwencji(rok, procent) {
+    let kwotaSubwencji = rok * procent;
     let maxKwotaSubwencji = 3500000;
 
     if (kwotaSubwencji > maxKwotaSubwencji) {
